@@ -1,0 +1,18 @@
+input[name="username"]:valid,
+input[name="email"]:valid {
+    border: 4px solid rgb(6, 157, 6);
+}
+
+input[name="username"]:invalid,
+input[name="email"]:invalid {
+    border: 4px solid red;
+}
+
+input[name="username"]:valid~span[name="name"],
+input[name="email"]:valid~span[name="email"] {
+    display: none;
+}
+input[name="username"]:invalid~span[name="name"],
+input[name="email"]:invalid~span[name="email"] {
+    display: block;
+}
